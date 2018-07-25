@@ -1,5 +1,13 @@
 import * as React from 'react';
-import {DragDropContext, Draggable, Droppable, DroppableProvided, DraggableLocation, DropResult} from 'react-beautiful-dnd';
+import {
+  DragDropContext,
+  Draggable,
+  Droppable,
+  DroppableProvided,
+  DraggableLocation,
+  DropResult,
+  DroppableStateSnapshot, DraggableProvided, DraggableStateSnapshot
+} from 'react-beautiful-dnd';
 import './App.css';
 
 interface Item {
@@ -140,7 +148,7 @@ export default class App extends React.Component<{}, IAppState> {
     return (
       <DragDropContext onDragEnd={this.onDragEnd}>
         <Droppable droppableId="droppable">
-          {(provided:DroppableProvided, snapshot) => (
+          {(provided:DroppableProvided, snapshot:DroppableStateSnapshot) => (
             <div
               ref={provided.innerRef}
               {...provided.droppableProps}
@@ -149,20 +157,20 @@ export default class App extends React.Component<{}, IAppState> {
               {this.state.items.map((item, index) => (
                 <Draggable key={item.id} draggableId={item.id} index={index}>
                   {// tslint:disable-next-line:no-shadowed-variable
-                    (provided, snapshot) => (
+                    (providedDraggable:DraggableProvided, snapshotDraggable:DraggableStateSnapshot) => (
                       <div>
                         <div
-                          ref={provided.innerRef}
-                          {...provided.draggableProps}
+                          ref={providedDraggable.innerRef}
+                          {...providedDraggable.draggableProps}
                           style={getItemStyle(
-                            provided.draggableProps.style,
-                            snapshot.isDragging
+                            providedDraggable.draggableProps.style,
+                            snapshotDraggable.isDragging
                           )}
                         >
-                          <span style={{backgroundColor: "blue"}} {...provided.dragHandleProps}>Drag meeee   </span>
+                          <span style={{backgroundColor: "blue"}} {...providedDraggable.dragHandleProps}>Drag meeee   </span>
                           {item.content}
                         </div>
-                        {provided.placeholder}
+                        {providedDraggable.placeholder}
                       </div>
                     )}
                 </Draggable>
