@@ -5,5 +5,13 @@
       "config/**/*.js",
       "node_modules/**/*.ts"
     ]
+  },
+  "rules": {
+    "jsx-no-lambda": false,
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "no-debugger": false,
+    "no-console": ["log"],
+    "array-type": [true, "array"]
   }
 }
