@@ -1,5 +1,54 @@
 body {
-  margin: 0;
+  margin: 10px;
   padding: 0;
   font-family: sans-serif;
+}
+                      body {
+                        padding-left: 10px !important;
+                        padding-right: 10px !important;
+                      }
+
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
+@media all and (max-width: 480px) {
+  .hero td {
+    background-image: url(https://assets.say.com/images/emails/acorns/hero-mobile.png) !important;
+  }
+  .mj-column-per-20 {
+    display: none !important;
+  }
+  .mj-column-per-80 {
+    width: 100% !important;
+  }
+  .mj-column-per-80 div {
+    text-align: center !important;
+  }
+}
+
+@media all and (min-width: 481px) {
+  .hero td {
+    background-image: url(https://assets.say.com/images/emails/acorns/hero.png) !important;
+  }
+  .main {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+  .spend {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+  .footer {
+    padding-left: 45px !important;
+    padding-right: 45px !important;
+  }
+  .download {
+    width: 60% !important;
+  }
 }
