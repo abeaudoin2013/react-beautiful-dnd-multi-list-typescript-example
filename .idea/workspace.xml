@@ -16,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="App.tsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.tsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="176" column="17" lean-forward="true" selection-start-line="176" selection-start-column="17" selection-end-line="176" selection-end-column="17" />
+            <state relative-caret-position="655">
+              <caret line="218" column="15" selection-start-line="218" selection-start-column="15" selection-end-line="218" selection-end-column="15" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -28,11 +28,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.d.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/@types/react-beautiful-dnd/index.d.ts">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="131" column="41" lean-forward="true" selection-start-line="131" selection-start-column="41" selection-end-line="131" selection-end-column="41" />
+            <state relative-caret-position="405">
+              <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -50,6 +55,9 @@
       <find>source</find>
       <find>snapShot</find>
       <find>DraggableProvided</find>
+      <find>IAppState</find>
+      <find>console</find>
+      <find>getItems</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -60,6 +68,7 @@
       <list>
         <option value="$PROJECT_DIR$/tslint.json" />
         <option value="$PROJECT_DIR$/src/App.tsx" />
+        <option value="$PROJECT_DIR$/public/index.html" />
       </list>
     </option>
   </component>
@@ -80,9 +89,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2416" />
+    <option name="x" value="1718" />
     <option name="y" value="23" />
-    <option name="width" value="1177" />
+    <option name="width" value="1866" />
     <option name="height" value="1002" />
   </component>
   <component name="ProjectView">
@@ -96,6 +105,11 @@
             <path>
               <item name="drag-n-drop-poc" type="b2602c69:ProjectViewProjectNode" />
               <item name="drag-n-drop-poc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drag-n-drop-poc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drag-n-drop-poc" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="drag-n-drop-poc" type="b2602c69:ProjectViewProjectNode" />
@@ -140,19 +154,19 @@
       <option name="presentableId" value="Default" />
       <updated>1532528139443</updated>
       <workItem from="1532528140616" duration="20000" />
-      <workItem from="1532528176432" duration="12966000" />
+      <workItem from="1532528176432" duration="19312000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12986000" />
+    <option name="totallyTimeSpent" value="19332000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2416" y="23" width="1177" height="1002" extended-state="0" />
+    <frame x="1718" y="23" width="1866" height="1002" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13848768" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22936763" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -202,18 +216,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@types/react-beautiful-dnd/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="131" column="41" lean-forward="true" selection-start-line="131" selection-start-column="41" selection-end-line="131" selection-end-column="41" />
+        <state relative-caret-position="282">
+          <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="176" column="17" lean-forward="true" selection-start-line="176" selection-start-column="17" selection-end-line="176" selection-end-column="17" />
+        <state relative-caret-position="655">
+          <caret line="218" column="15" selection-start-line="218" selection-start-column="15" selection-end-line="218" selection-end-column="15" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
         </state>
       </provider>
     </entry>
