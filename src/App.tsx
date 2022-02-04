@@ -11,20 +11,20 @@ import {
 import {Flex} from 'grid-styled'
 import './App.css';
 
-interface Item {
+interface IItem {
   id: string;
   content: string;
 }
 interface IAppState {
-  items: Item[];
-  selected: Item[];
+  items: IItem[];
+  selected: IItem[];
 }
 interface IMoveResult {
-  droppable: Item[];
-  droppable2: Item[];
+  droppable: IItem[];
+  droppable2: IItem[];
 }
 
-const getItems = (count: number, offset:number = 0): Item[] => {
+const getItems = (count: number, offset:number = 0): IItem[] => {
   return Array
     .from({length: count}, (v, k) => k)
     .map(k => ({
@@ -33,7 +33,7 @@ const getItems = (count: number, offset:number = 0): Item[] => {
     }));
 };
 
-const reorder = (list: Item[], startIndex: number, endIndex: number):Item[] => {
+const reorder = (list: IItem[], startIndex: number, endIndex: number):IItem[] => {
   const result = [...list];
   const [removed] = result.splice(startIndex, 1);
   result.splice(endIndex, 0, removed);
@@ -45,7 +45,7 @@ const reorder = (list: Item[], startIndex: number, endIndex: number):Item[] => {
 /**
  * Moves an item from one list to another list.
  */
-const move = (source: Item[], destination: Item[], droppableSource:DraggableLocation, droppableDestination:DraggableLocation):IMoveResult | any => {
+const move = (source: IItem[], destination: IItem[], droppableSource:DraggableLocation, droppableDestination:DraggableLocation):IMoveResult | any => {
   const sourceClone = [...source];
   const destClone = [...destination];
   const [removed] = sourceClone.splice(droppableSource.index, 1);
@@ -95,7 +95,7 @@ export default class App extends React.Component<{}, IAppState> {
     this.getList = this.getList.bind(this);
   }
 
-  public getList (id:string):Item[] {
+  public getList (id:string):IItem[] {
     return this.state[this.id2List[id]];
   }
 
